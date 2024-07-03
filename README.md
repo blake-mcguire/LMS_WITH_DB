@@ -113,13 +113,12 @@ CREATE TABLE Loans(
 3. Now That Your Table is set up and your database is correctly configured Update the connection data in the DB_connection.py file
     to correctly reflect your specs
 
- -----------------------|
-   def connect_db():    |
-    db_name = 'LMS_DB'  |    
-    user = 'root'       |  <----- UPDATE THIS TO REFLECT YOUR SPECIFICATIONS
-    password = ''       |
-    host = 'localhost'  |
- -----------------------|
+   def connect_db():    
+    db_name = 'LMS_DB'      
+    user = 'root'         <----- UPDATE THIS TO REFLECT YOUR SPECIFICATIONS
+    password = ''       
+    host = 'localhost'  
+
     
     try:
         conn = mysql.connector.connect(
